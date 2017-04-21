@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="室内一氧化碳浓度情况"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/co"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp" />
+
+    <TextView
+        android:id="@+id/coState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="正常"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#00CC00"/>
+
+    <Switch
+        android:id="@+id/warnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textOff="报警关闭"
+        android:textOn="报警开启"
+        android:layout_below="@+id/warnState"
+        android:layout_alignLeft="@+id/coState"
+        android:layout_alignStart="@+id/coState" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="警报开关"
+        android:layout_below="@+id/coState"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/warnState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

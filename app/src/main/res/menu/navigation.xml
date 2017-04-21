@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/temperature"
+        android:icon="@mipmap/temperature"
+        android:title="Temperature" />
+
+    <item
+        android:id="@+id/humidity"
+        android:icon="@mipmap/humidity"
+        android:title="Humidity" />
+
+    <item
+        android:id="@+id/coWarn"
+        android:icon="@mipmap/co"
+        android:title="CoWarn" />
+
+</menu>
